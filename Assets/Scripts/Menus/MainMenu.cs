@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public Slider volumeSlider;
     // Start is called before the first frame update
     private void Start()
     {
+        volumeSlider.value = AudioManager.Instance.GetVolume();
         if (!AudioManager.Instance.isPlayingMainMenuMusic)
         {
             AudioManager.Instance.PlayMusic("MainMenu");
@@ -26,8 +29,8 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void MuteGame()
+    public void SetVolume()
     {
-
+        AudioManager.Instance.SetVolume(volumeSlider.value);
     }
 }

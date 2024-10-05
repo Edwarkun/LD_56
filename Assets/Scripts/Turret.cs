@@ -15,9 +15,12 @@ public class Turret : MonoBehaviour
 
     public HealthSystem healthSystem;
 
+    public GameObject debriPrefab;
+
     public void Start()
     {
         healthSystem.onDie += RemoveFromGrid;
+        healthSystem.onDie += SpawnDebris;
         AudioManager.Instance.PlaySounds("Buildings_ConstructSmall");
     }
 
@@ -37,6 +40,19 @@ public class Turret : MonoBehaviour
     {
         foreach (var position in positions)
             GridController.Instance.placeables.Remove(position);
+    }
+    private void SpawnDebris()
+    {
+        if (originCombination == null)
+            Instantiate(debriPrefab, this.transform.position, Quaternion.identity, null);
+        else
+            foreach (var pos in originCombination.layout)
+            {
+                float posX = (-pos.x * GridController.TileWidth + pos.y * GridController.TileWidth) / 2f;
+                float posY = 0.125f + (-pos.x * GridController.TileHeight - pos.y * GridController.TileHeight + -0.5f) / 2f;
+
+                Instantiate(debriPrefab, this.transform.position + new Vector3(posX, posY, 0.0f), Quaternion.identity, null);
+            }
     }
 
 }

@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2616151912745735964}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 2703968989576499157}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 0.18, z: 0}
+  m_LocalPosition: {x: 0.306, y: -0.065, z: 0}
   m_LocalScale: {x: 0.12432971, y: 0.12432971, z: 0.12432971}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -168,6 +168,7 @@ MonoBehaviour:
   ID: 6
   originCombination: {fileID: 11400000, guid: 0f41424e4dd7ea04abc4781e7580566f, type: 2}
   healthSystem: {fileID: 6062272785397217623}
+  debriPrefab: {fileID: 7579846550156852345, guid: d4a790c7aec854c4599482b1f568bb38, type: 3}
 --- !u!114 &6062272785397217623
 MonoBehaviour:
   m_ObjectHideFlags: 0

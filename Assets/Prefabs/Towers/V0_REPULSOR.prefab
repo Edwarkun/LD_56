@@ -171,6 +171,7 @@ MonoBehaviour:
   ID: 3
   originCombination: {fileID: 0}
   healthSystem: {fileID: 2358457284255559501}
+  debriPrefab: {fileID: 7579846550156852345, guid: 6c69acbb633ffef499cebba00643c27c, type: 3}
 --- !u!114 &5312062044208444495
 MonoBehaviour:
   m_ObjectHideFlags: 0
