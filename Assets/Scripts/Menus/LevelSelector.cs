@@ -43,7 +43,7 @@ public class LevelSelector : MonoBehaviour
 
         if (!AudioManager.Instance.isPlayingLevelsMusic)
         {
-            AudioManager.Instance.PlayMusic("LevelsMusic");
+            AudioManager.Instance.PlayMusic("PrepareBattleMusic");
         }
     }
 
