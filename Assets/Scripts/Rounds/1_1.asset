@@ -27,3 +27,6 @@ MonoBehaviour:
   - {x: -7, y: 5}
   - {x: -7, y: 6}
   resources: 1
+  dialog: 
+  canPlaceTower: 000001
+  canCombine: 0

@@ -27,3 +27,6 @@ MonoBehaviour:
   - {x: -7, y: 5}
   - {x: -7, y: 6}
   resources: 2
+  dialog: Try placing a couple of shields in front of the towers to acheive victory!
+  canPlaceTower: 000100
+  canCombine: 0

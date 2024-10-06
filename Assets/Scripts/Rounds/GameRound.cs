@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEditor;
 using UnityEngine;
 using static UnityEditor.PlayerSettings;
@@ -11,6 +12,13 @@ public class GameRound : ScriptableObject
     public GameObject[] squadsToSpawn;
     public Vector2[] positions;
     public int resources;
+
+    public string dialog = "";
+
+    [Header("True IF tower construction is allowed")]
+    [Description("0->ATK, 1->DEF, 2->MGK")]
+    public bool[] canPlaceTower = new bool[3];
+    public bool canCombine;
 
     public void SpawnEnemies()
     {

@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: 0_0
   m_EditorClassIdentifier: 
   squadsToSpawn:
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
+  - {fileID: 1904114237208702599, guid: 109aad90d98094843a7eb8e842c6801f, type: 3}
   positions:
   - {x: -1, y: 5}
   resources: 100
+  dialog: Damn Catzis... Try placing an attack tower to fend them off!
+  canPlaceTower: 010101
+  canCombine: 0

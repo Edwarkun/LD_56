@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 8619713615528682071}
   - component: {fileID: 7349642766627994219}
   - component: {fileID: 1177026828781763534}
+  - component: {fileID: 4104265842592947470}
   m_Layer: 6
   m_Name: V1_0_DAMAGE
   m_TagString: Untagged
@@ -247,6 +248,33 @@ MonoBehaviour:
   isAttacking: 0
   projectile: {fileID: 1179386904005303787, guid: 3558c7404927d0d46b7db1c8150e2ded, type: 3}
   projectileSpawnPoint: {fileID: 2479237913282134309}
+--- !u!50 &4104265842592947470
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3935056955592974700}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4634530714902319074
 GameObject:
   m_ObjectHideFlags: 0

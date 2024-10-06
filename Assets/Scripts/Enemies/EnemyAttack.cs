@@ -27,6 +27,10 @@ public class EnemyAttack : MonoBehaviour
     public Projectile projectile;
     public Transform projectileSpawnPoint;
 
+    [Header("Kamikaze Only")]
+    public bool kamikaze = false;
+    public GameObject kamikazeArea;
+
     protected void Start()
     {
         squaredRange = range * range;
@@ -71,6 +75,13 @@ public class EnemyAttack : MonoBehaviour
             return;
 
         healthSystem.TakeDamage(attack);
+
+        if (kamikaze)
+        {
+            var hp = this.GetComponent<HealthSystem>();
+            hp.TakeDamage(hp.health + 1);
+            Instantiate(kamikazeArea, this.transform.position, Quaternion.identity, null);
+        }
     }
 
     public void SpawnProjectile()
@@ -87,6 +98,5 @@ public class EnemyAttack : MonoBehaviour
         {
             AudioManager.Instance.PlaySounds(rangeAttackSound);
         }
-
     }
 }
