@@ -5,7 +5,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class DamageArea : MonoBehaviour
 {
-    public HashSet<EnemyController> targets = new HashSet<EnemyController>();
+    public HashSet<HealthSystem> targets = new HashSet<HealthSystem>();
 
     public int damage;
 
@@ -15,9 +15,7 @@ public class DamageArea : MonoBehaviour
         Queue<HealthSystem> hitTargets = new Queue<HealthSystem>();
         foreach (var target in targets)
         {
-            HealthSystem hp = target.GetComponent<HealthSystem>();
-            if (hp != null)
-                hitTargets.Enqueue(hp);
+            hitTargets.Enqueue(target);
         }
         while (hitTargets.Count > 0)
         {
@@ -27,7 +25,7 @@ public class DamageArea : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        EnemyController controller = collision.gameObject.GetComponent<EnemyController>();
+        HealthSystem controller = collision.gameObject.GetComponent<HealthSystem>();
         if (controller != null)
         {
             if (!targets.Contains(controller))
@@ -37,7 +35,7 @@ public class DamageArea : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        EnemyController controller = collision.gameObject.GetComponent<EnemyController>();
+        HealthSystem controller = collision.gameObject.GetComponent<HealthSystem>();
         if (controller != null)
         {
             if (targets.Contains(controller))

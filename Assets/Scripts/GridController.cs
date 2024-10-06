@@ -39,6 +39,8 @@ public class GridController : MonoBehaviour
 
     public GameObject lastSelectedTile = null;
 
+    public GameObject lever;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -126,6 +128,8 @@ public class GridController : MonoBehaviour
         if (!Input.GetKeyDown(KeyCode.Mouse0))
             return;
 
+        lever.SetActive(true);
+
         resources--;
         resourcesText.text = resources.ToString();
 
@@ -141,6 +145,7 @@ public class GridController : MonoBehaviour
 
                 Combination tempComb = placeables[fixedPos].originCombination;
                 Destroy(placeables[fixedPos].gameObject);
+
                 //Destroy the tower and spawn the recipe
                 for (int j = 0; j < tempComb.layout.Length; j++)
                 {
@@ -148,8 +153,10 @@ public class GridController : MonoBehaviour
                     if(targetPos != fixedPos)
                         SpawnTower(tempComb.towerID[j], targetPos);
                 }
+                return;
             }
             Destroy(placeables[fixedPos].gameObject);
+            currentTurrets.Remove(fixedPos);
         }
 
         SpawnTower(currentlySelectedTower, fixedPos);
@@ -165,6 +172,9 @@ public class GridController : MonoBehaviour
         tower.transform.position = grid[targetPos].transform.position;
         placeables[targetPos] = tower;
         tower.CalculatePositions(targetPos);
+
+        if (!GameController.Instance.canCombine)
+            return;
 
         Vector2 offset = Vector2.zero;
 
@@ -196,10 +206,10 @@ public class GridController : MonoBehaviour
                 }
                 if (valid)
                 {
-
                     AudioManager.Instance.PlaySounds("Buildings_Fusion");
                     Tuple<int, int> targetFusionPos = Tuple.Create<int, int>(targetPos.Item1 - (int)offset.x, targetPos.Item2 - (int)offset.y);
                     Destroy(placeables[targetFusionPos].gameObject);
+                    currentTurrets.Remove(targetFusionPos);
                     SpawnTower(tower.combinations[i].towerToSpawnID, targetFusionPos);
 
                     for (int k = 1; k < tower.combinations[i].layout.Length; k++)
@@ -207,6 +217,7 @@ public class GridController : MonoBehaviour
                         Tuple<int, int> tempPos = Tuple.Create<int, int>(targetPos.Item1 + (int)tower.combinations[i].layout[k].x - (int)offset.x, targetPos.Item2 + (int)tower.combinations[i].layout[k].y - (int)offset.y);
 
                         Destroy(placeables[tempPos].gameObject);
+                        currentTurrets.Remove(tempPos);
                         placeables[tempPos] = placeables[targetFusionPos];
                     }
                     return;

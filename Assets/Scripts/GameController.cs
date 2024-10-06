@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -25,6 +27,12 @@ public class GameController : MonoBehaviour
     public HashSet<EnemyController> enemies = new HashSet<EnemyController>();
 
     public Animator roundAnim;
+
+    public GameObject dialog;
+    public TextMeshProUGUI dialogText;
+
+    public bool canCombine = true;
+    public GameObject[] towerButtons;
 
     public void Start()
     {
@@ -66,6 +74,15 @@ public class GameController : MonoBehaviour
 
         levelRounds[LevelSelector.selectedLevel].rounds[currentRound].SpawnEnemies();
         GridController.Instance.SetupRound(levelRounds[LevelSelector.selectedLevel].rounds[currentRound].resources);
+
+        dialog.SetActive(levelRounds[LevelSelector.selectedLevel].rounds[currentRound].dialog.Length > 0);
+        dialogText.text = levelRounds[LevelSelector.selectedLevel].rounds[currentRound].dialog;
+
+        for(int i = 0; i < towerButtons.Length; i++)
+        {
+            towerButtons[i].SetActive(levelRounds[LevelSelector.selectedLevel].rounds[currentRound].canPlaceTower[i]);
+        }
+        canCombine = levelRounds[LevelSelector.selectedLevel].rounds[currentRound].canCombine;
     }
     public void StartRound()
     {

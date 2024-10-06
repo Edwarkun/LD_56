@@ -3809,6 +3809,7 @@ MonoBehaviour:
   - {fileID: 5695309284790128864, guid: fb7077eb959921b4788619859dc9a548, type: 3}
   - {fileID: 3964082977116461615, guid: 461ec342860ab934692194b8d4121991, type: 3}
   lastSelectedTile: {fileID: 0}
+  lever: {fileID: 1931939532}
 --- !u!483693784 &1143866506
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -5285,6 +5286,13 @@ MonoBehaviour:
   currentRound: 0
   LeverAnimatior: {fileID: 569479300}
   roundAnim: {fileID: 91739056}
+  dialog: {fileID: 31807266}
+  dialogText: {fileID: 952722312}
+  canCombine: 0
+  towerButtons:
+  - {fileID: 1151389871}
+  - {fileID: 469837108}
+  - {fileID: 765079150}
 --- !u!4 &1868664249
 Transform:
   m_ObjectHideFlags: 0
@@ -5466,7 +5474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1931939533
 RectTransform:
   m_ObjectHideFlags: 0
