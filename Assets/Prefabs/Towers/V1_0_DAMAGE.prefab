@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1629899360411165665}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -87,6 +87,7 @@ MonoBehaviour:
   ID: 4
   originCombination: {fileID: 11400000, guid: 59f95cd01fd565b4a9d772de3f2c446e, type: 2}
   healthSystem: {fileID: 8534371262472604367}
+  debriPrefab: {fileID: 7579846550156852345, guid: 618f39745e418c648819ab0075bedaff, type: 3}
 --- !u!60 &5717437180172399502
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -272,7 +273,7 @@ Transform:
   m_GameObject: {fileID: 4634530714902319074}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.021, y: 0.166, z: 0}
+  m_LocalPosition: {x: 0.51, y: -0.055, z: 0}
   m_LocalScale: {x: 0.14971466, y: 0.14971466, z: 0.14971466}
   m_ConstrainProportionsScale: 0
   m_Children: []

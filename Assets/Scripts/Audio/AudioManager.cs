@@ -3,17 +3,34 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.Rendering;
 
 public class AudioManager : MonoBehaviour
 {
+    public AudioMixer masterMixer;
     public static AudioManager Instance;
-
     public Sound[] music, sounds;
 
     [HideInInspector] public bool isPlayingMainMenuMusic;
     [HideInInspector] public bool isPlayingLevelsMusic;
 
     public AudioSource musicSource;
+
+    public void SetVolume(float amount)
+    {
+        if(amount > 0.05f)
+            masterMixer.SetFloat("masterVolume", 20f * Mathf.Log10(amount));
+        else
+            masterMixer.SetFloat("masterVolume", -155f);
+    }
+    public float GetVolume()
+    {
+        masterMixer.GetFloat("masterVolume", out float val);
+        if (val < -150f)
+            return 0f;
+        return Mathf.Pow(10.0f, val / 20.0f);
+    }
 
     private void Awake()
     {
@@ -32,7 +49,7 @@ public class AudioManager : MonoBehaviour
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
-
+            s.source.outputAudioMixerGroup = masterMixer.FindMatchingGroups("Master")[0];
 
             s.source.loop = s.loop;
         }

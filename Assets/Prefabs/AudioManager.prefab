@@ -41,7 +41,7 @@ AudioSource:
   m_GameObject: {fileID: 6116606281880386564}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 75a39521d4c206345a92a087a7fefae9, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -302,255 +302,298 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3085a38513d82414393b7a6cc81d8e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masterMixer: {fileID: 24100000, guid: 75a39521d4c206345a92a087a7fefae9, type: 2}
   music:
-  - name: MainMenu
+  - modulationRange: 0.1
+    name: MainMenu
     clip: {fileID: 8300000, guid: e0bcbb3a261a1ca4db4ede96a84c1f11, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: LevelsMusic
+  - modulationRange: 0.1
+    name: LevelsMusic
     clip: {fileID: 8300000, guid: db0ad776a6da65a45a2b1a3b3fa9e38e, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
   sounds:
-  - name: UI_PressButton
+  - modulationRange: 0.1
+    name: UI_PressButton
     clip: {fileID: 8300000, guid: f272b6dcac479bf439bfffeeb501b3c8, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: UI_MoveBuilding
+  - modulationRange: 0.1
+    name: UI_MoveBuilding
     clip: {fileID: 8300000, guid: b9c468024aaeb1741b9c2dd074de59f1, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: UI_PressConstructButton
+  - modulationRange: 0.1
+    name: UI_PressConstructButton
     clip: {fileID: 8300000, guid: c35883be5fc7af44aafb94eb9b21b00f, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: UI_StartRound
+  - modulationRange: 0.1
+    name: UI_StartRound
     clip: {fileID: 8300000, guid: 690070a781f78bf469ef9b4aa47b9de2, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: Buildings_Construct
+  - modulationRange: 0.1
+    name: Buildings_Construct
     clip: {fileID: 8300000, guid: bf336587d249486498aca057e6f9bfc1, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Buildings_ConstructSmall
+  - modulationRange: 0.1
+    name: Buildings_ConstructSmall
     clip: {fileID: 8300000, guid: 85003e02faac76343b2821eae43b4dc0, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: Buildings_NewConstruction
+  - modulationRange: 0.1
+    name: Buildings_NewConstruction
     clip: {fileID: 8300000, guid: ea44fde7fa386e641b22ebfe03ff31a7, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Buildings_Fusion
+  - modulationRange: 0.1
+    name: Buildings_Fusion
     clip: {fileID: 8300000, guid: 8030048b6be3b6a45a150a89bc66b006, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Buildings_ReciveDamage
+  - modulationRange: 0.1
+    name: Buildings_ReciveDamage
     clip: {fileID: 8300000, guid: a6f8f3e4e4e01de4aa78951fbb153e11, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Buildings_BrokeStructure
+  - modulationRange: 0.1
+    name: Buildings_BrokeStructure
     clip: {fileID: 8300000, guid: 7a7572b3b4f132b41bf21d33ef3345c9, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: Buildings_CancelConstruction
+  - modulationRange: 0.1
+    name: Buildings_CancelConstruction
     clip: {fileID: 8300000, guid: f440c849bab0ebe4a97c0c731ce05dba, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Enemies_DeadParticles
+  - modulationRange: 0.1
+    name: Enemies_DeadParticles
     clip: {fileID: 8300000, guid: ee47c581be974154f8a8f8a5500083d3, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Enemies_BigDeadParticles
+  - modulationRange: 0.1
+    name: Enemies_BigDeadParticles
     clip: {fileID: 8300000, guid: 23d9efc3984877c4ca808029adfe1ada, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: Enemies_MeleAttack
+  - modulationRange: 0.1
+    name: Enemies_MeleAttack
     clip: {fileID: 8300000, guid: 1d0a09c3ffd513d40bd6b8ee5addc8c7, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Enemies_RangedAttack
+  - modulationRange: 0.1
+    name: Enemies_RangedAttack
     clip: {fileID: 8300000, guid: 3ca128b263356b142ae8a8687d4b284e, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Enemies_BasicMeleHit
+  - modulationRange: 0.1
+    name: Enemies_BasicMeleHit
     clip: {fileID: 8300000, guid: d77898dfb11407d489f0eaa1ce283605, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Enemies_BasicRangeHit
+  - modulationRange: 0.1
+    name: Enemies_BasicRangeHit
     clip: {fileID: 8300000, guid: 65515f12c4beb424fac652eaadfa64d4, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: Enemies_BigMeleHit
+  - modulationRange: 0.1
+    name: Enemies_BigMeleHit
     clip: {fileID: 8300000, guid: 8d74211bc964b294a97ef0e3cc5c1c47, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: Enemies_BigRangeHit
+  - modulationRange: 0.1
+    name: Enemies_BigRangeHit
     clip: {fileID: 8300000, guid: 8f763c7e7b99def4591f1aa33403e14d, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: Enemies_Grrrr
+  - modulationRange: 0.1
+    name: Enemies_Grrrr
     clip: {fileID: 8300000, guid: 117f4001e7ae8a844840345494dd6717, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: Enemies_CatNoises
+  - modulationRange: 0.1
+    name: Enemies_CatNoises
     clip: {fileID: 8300000, guid: 0033f9f232af6ec4b8fca255ce230390, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: Enemies_CatNoises2
+  - modulationRange: 0.1
+    name: Enemies_CatNoises2
     clip: {fileID: 8300000, guid: 59ed72063689eb64ab131da21ce42700, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: Enemies_CatNoises3
+  - modulationRange: 0.1
+    name: Enemies_CatNoises3
     clip: {fileID: 8300000, guid: 08a3f47057e8a6e468b53ea028c0c8f8, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: Torrets_BasicBow
+  - modulationRange: 0.1
+    name: Torrets_BasicBow
     clip: {fileID: 8300000, guid: f8e81c540c685574f962a0ff4fc0fb0b, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Torrets_SniperCharge
+  - modulationRange: 0.1
+    name: Torrets_SniperCharge
     clip: {fileID: 8300000, guid: fff095b6b556bfe44895ec2494bf20f8, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Torrets_SniperAttack
+  - modulationRange: 0.1
+    name: Torrets_SniperAttack
     clip: {fileID: 8300000, guid: 0d169927e1737c449a02b2670c834a9a, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Torrets_Sniper
+  - modulationRange: 0.1
+    name: Torrets_Sniper
     clip: {fileID: 8300000, guid: 1db3ced409dce85438d6dcaf143522a2, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: Torrets_MagicRepulsion
+  - modulationRange: 0.1
+    name: Torrets_MagicRepulsion
     clip: {fileID: 8300000, guid: a2efadf07b0a7b74cabb41d51fc0cf91, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Torrets_FlametrhowerStart
+  - modulationRange: 0.1
+    name: Torrets_FlametrhowerStart
     clip: {fileID: 8300000, guid: f84b1837d49c0d2459f9d0e05c5747fb, type: 3}
     volume: 0
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: GoblinsSounds_Charge
+  - modulationRange: 0.1
+    name: GoblinsSounds_Charge
     clip: {fileID: 8300000, guid: 8abf7e01c2f72d94fa097a5c23c85efb, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: GoblinsSounds_Hide
+  - modulationRange: 0.1
+    name: GoblinsSounds_Hide
     clip: {fileID: 8300000, guid: 520b02d00cdc1b342adb3feb09276487, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: GoblinsSounds_Scream
+  - modulationRange: 0.1
+    name: GoblinsSounds_Scream
     clip: {fileID: 8300000, guid: 2b6fa2691889030459bc4b57033e4abc, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: GoblinsSounds_Scream2
+  - modulationRange: 0.1
+    name: GoblinsSounds_Scream2
     clip: {fileID: 8300000, guid: af0b862c2a573484d997d887fcfc4793, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: GoblinsSounds_Scream3
+  - modulationRange: 0.1
+    name: GoblinsSounds_Scream3
     clip: {fileID: 8300000, guid: 0c90a9ec69f04954b8d3dcefc7e2d2eb, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: GoblinsSounds_Laught
+  - modulationRange: 0.1
+    name: GoblinsSounds_Laught
     clip: {fileID: 8300000, guid: c72850b12529bdd4b9ce215c513293fa, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: GoblinsSounds_Laught2
+  - modulationRange: 0.1
+    name: GoblinsSounds_Laught2
     clip: {fileID: 8300000, guid: 93066a22fc878424fadb5a3cfa1a6b67, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: GoblinsSounds_Pain
+  - modulationRange: 0.1
+    name: GoblinsSounds_Pain
     clip: {fileID: 8300000, guid: d236800361674f44e9e58d0d6f053983, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: GoblinsSounds_Pain2
+  - modulationRange: 0.1
+    name: GoblinsSounds_Pain2
     clip: {fileID: 8300000, guid: 9392492a30cf3514884cea298cd6c164, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: GoblinsSounds_Pain3
+  - modulationRange: 0.1
+    name: GoblinsSounds_Pain3
     clip: {fileID: 8300000, guid: 058f5000b7c9aab418ab45eb370fdb14, type: 3}
     volume: 0
     pitch: 0
     loop: 1
     source: {fileID: 0}
-  - name: GoblinsSounds_Dead
+  - modulationRange: 0.1
+    name: GoblinsSounds_Dead
     clip: {fileID: 8300000, guid: fa9bc585e7386734ca089e97f11a602a, type: 3}
     volume: 0
     pitch: 0
@@ -559,4 +602,3 @@ MonoBehaviour:
   isPlayingMainMenuMusic: 0
   isPlayingLevelsMusic: 0
   musicSource: {fileID: 3830871774883573800}
-  soundsSource: {fileID: 6444817429652938723}

@@ -5,20 +5,26 @@ using System.ComponentModel;
 using Unity.VisualScripting;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using UnityEngine.Device;
 using static UnityEditor.PlayerSettings;
 
 public class GridController : MonoBehaviour
 {
+    public ushort currentlySelectedTower = 0;
+    public ushort resources = 0;
+    public Button[] towerButtons;
+    public TextMeshProUGUI resourcesText;
     public static GridController Instance { get; private set; }
 
     public Camera cam;
 
-    public readonly float MapWidth = 10; //Amount of tiles
-    public readonly float MapHeight = 10;
+    public static float MapWidth = 10; //Amount of tiles
+    public static float MapHeight = 10;
 
-    public readonly float TileWidth = 1.0f; //Unity units
-    public readonly float TileHeight = 0.5f; 
+    public static float TileWidth = 1.0f; //Unity units
+    public static float TileHeight = 0.5f; 
 
     public Dictionary<Tuple<int, int>, GameObject> grid = new Dictionary<Tuple<int, int>, GameObject>();
 
@@ -208,4 +214,13 @@ public class GridController : MonoBehaviour
         }
     }
     //IDs -> 0->empty, 1->DMG, 2->SHIELD, 3->REPULSOR
+
+    public void SelectTower(int ID)
+    {
+        if(ID == currentlySelectedTower)
+        {
+            currentlySelectedTower = 0;
+
+        }
+    }
 }
