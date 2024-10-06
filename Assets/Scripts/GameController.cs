@@ -73,6 +73,7 @@ public class GameController : MonoBehaviour
         foreach (var enemyController in enemies)
         {
             enemyController.BeginRound();
+            AudioManager.Instance.PlayMusic("BattleMusic");
         }
     }
 
@@ -126,6 +127,7 @@ public class GameController : MonoBehaviour
         {
             LeverAnimatior.SetTrigger("Reset");
             SetupRound();
+            AudioManager.Instance.PlayMusic("PrepareBattleMusic");
         }
     }
 }

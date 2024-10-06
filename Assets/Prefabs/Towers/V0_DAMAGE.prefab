@@ -243,7 +243,7 @@ MonoBehaviour:
   maxHealth: 80
   deathParticles: {fileID: 7176546262112281492}
   hurtSound: Buildings_ReciveDamage
-  deadSound: Buildings_BrokeStructure
+  deadSound: Buildung_BreakingStructureGoblin
   animator: {fileID: 3467944083923091477}
 --- !u!60 &2782613071461698645
 PolygonCollider2D:

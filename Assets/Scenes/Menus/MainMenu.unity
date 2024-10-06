@@ -3767,6 +3767,50 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4117945209707830274, guid: 5e5846957c87c764995dfb8757c2b015, type: 3}
+      propertyPath: music.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117945209707830274, guid: 5e5846957c87c764995dfb8757c2b015, type: 3}
+      propertyPath: sounds.Array.size
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117945209707830274, guid: 5e5846957c87c764995dfb8757c2b015, type: 3}
+      propertyPath: music.Array.data[1].name
+      value: BattleMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117945209707830274, guid: 5e5846957c87c764995dfb8757c2b015, type: 3}
+      propertyPath: music.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 027137b7d30ef0248baa0529129407ce, type: 3}
+    - target: {fileID: 4117945209707830274, guid: 5e5846957c87c764995dfb8757c2b015, type: 3}
+      propertyPath: music.Array.data[2].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117945209707830274, guid: 5e5846957c87c764995dfb8757c2b015, type: 3}
+      propertyPath: music.Array.data[2].name
+      value: PrepareBattleMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117945209707830274, guid: 5e5846957c87c764995dfb8757c2b015, type: 3}
+      propertyPath: sounds.Array.data[40].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: eea5511fcc3a9ca48b001ee734b0b0d4, type: 3}
+    - target: {fileID: 4117945209707830274, guid: 5e5846957c87c764995dfb8757c2b015, type: 3}
+      propertyPath: sounds.Array.data[40].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117945209707830274, guid: 5e5846957c87c764995dfb8757c2b015, type: 3}
+      propertyPath: sounds.Array.data[40].name
+      value: Buildung_BreakingStructureGoblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117945209707830274, guid: 5e5846957c87c764995dfb8757c2b015, type: 3}
+      propertyPath: music.Array.data[2].modulationRange
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117945209707830274, guid: 5e5846957c87c764995dfb8757c2b015, type: 3}
+      propertyPath: sounds.Array.data[40].modulationRange
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4524987374343869541, guid: 5e5846957c87c764995dfb8757c2b015, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1119.607
