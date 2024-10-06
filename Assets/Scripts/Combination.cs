@@ -8,5 +8,5 @@ public class Combination : ScriptableObject
 {
     public Vector2[] layout;
     public int[] towerID;
-    public GameObject towerToSpawn;
+    public int towerToSpawnID;
 }

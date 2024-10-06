@@ -37,7 +37,7 @@ public class LevelSelector : MonoBehaviour
 
     public void OpenLevel(int levelId)
     {
-        selectedLevel = 0;
+        selectedLevel = levelId;
         SceneManager.LoadScene(2);
         AudioManager.Instance.PlaySounds("PressButton");
 

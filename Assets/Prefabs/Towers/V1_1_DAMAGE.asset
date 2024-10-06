@@ -17,4 +17,4 @@ MonoBehaviour:
   - {x: 1, y: 0}
   - {x: 2, y: 0}
   towerID: 010000000100000001000000
-  towerToSpawn: {fileID: 3931322897011382538, guid: 31edc5034eac4d648bfe8d289bd6ce8f, type: 3}
+  towerToSpawnID: 5
