@@ -1983,7 +1983,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 468432066372241904, guid: ca70b883d5375f5429f04c803f2c5a61, type: 3}
       propertyPath: m_Name
-      value: Level 0
+      value: Level 10
       objectReference: {fileID: 0}
     - target: {fileID: 1730703033132798000, guid: ca70b883d5375f5429f04c803f2c5a61, type: 3}
       propertyPath: m_Sprite

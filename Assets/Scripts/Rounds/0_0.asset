@@ -9,14 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b80256f62d44ac449626955dace6649, type: 3}
-  m_Name: V1_0_REPULSOR
+  m_Script: {fileID: 11500000, guid: e1799f709a6f2f04dbac5a1311d60308, type: 3}
+  m_Name: 0_0
   m_EditorClassIdentifier: 
-  layout:
-  - {x: 0, y: 0}
-  - {x: -1, y: 1}
-  - {x: 0, y: 1}
-  - {x: 1, y: 1}
-  - {x: 0, y: 2}
-  towerID: 0300000003000000030000000300000003000000
-  towerToSpawnID: 7
+  squadsToSpawn:
+  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
+  positions:
+  - {x: -1, y: 5}
+  resources: 100

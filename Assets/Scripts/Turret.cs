@@ -44,14 +44,14 @@ public class Turret : MonoBehaviour
     private void SpawnDebris()
     {
         if (originCombination == null)
-            Instantiate(debriPrefab, this.transform.position, Quaternion.identity, null);
+            GridController.Instance.debris.Enqueue(Instantiate(debriPrefab, this.transform.position, Quaternion.identity, null));
         else
             foreach (var pos in originCombination.layout)
             {
                 float posX = (-pos.x * GridController.TileWidth + pos.y * GridController.TileWidth) / 2f;
                 float posY = 0.125f + (-pos.x * GridController.TileHeight - pos.y * GridController.TileHeight + -0.5f) / 2f;
 
-                Instantiate(debriPrefab, this.transform.position + new Vector3(posX, posY, 0.0f), Quaternion.identity, null);
+                GridController.Instance.debris.Enqueue(Instantiate(debriPrefab, this.transform.position + new Vector3(posX, posY, 0.0f), Quaternion.identity, null));
             }
     }
 

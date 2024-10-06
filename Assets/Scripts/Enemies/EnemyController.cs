@@ -10,6 +10,15 @@ public class EnemyController : MonoBehaviour
 
     public GameObject target;
 
+    public void Start()
+    {
+        GameController.Instance.enemies.Add(this);
+    }
+    public void OnDestroy()
+    {
+        GameController.Instance.enemies.Remove(this);
+    }
+
     public void BeginRound() 
     {
         movement.enabled = true;
