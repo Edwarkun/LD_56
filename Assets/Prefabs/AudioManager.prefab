@@ -44,7 +44,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 75a39521d4c206345a92a087a7fefae9, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -312,8 +312,15 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - modulationRange: 0.1
-    name: LevelsMusic
+    name: BattleMusic
     clip: {fileID: 8300000, guid: db0ad776a6da65a45a2b1a3b3fa9e38e, type: 3}
+    volume: 0
+    pitch: 0
+    loop: 1
+    source: {fileID: 0}
+  - modulationRange: 0.1
+    name: PrepareBattleMusic
+    clip: {fileID: 8300000, guid: 027137b7d30ef0248baa0529129407ce, type: 3}
     volume: 0
     pitch: 0
     loop: 1
@@ -353,6 +360,20 @@ MonoBehaviour:
     volume: 0
     pitch: 0
     loop: 0
+    source: {fileID: 0}
+  - modulationRange: 0.1
+    name: UI_WinRound
+    clip: {fileID: 8300000, guid: aeb4e9f31cfe61b40a8ea0ac2e42ffaa, type: 3}
+    volume: 0
+    pitch: 0
+    loop: 1
+    source: {fileID: 0}
+  - modulationRange: 0.1
+    name: UI_LoseRound
+    clip: {fileID: 8300000, guid: d2507c96c4d15af4c9891dc041d411c8, type: 3}
+    volume: 0
+    pitch: 0
+    loop: 1
     source: {fileID: 0}
   - modulationRange: 0.1
     name: Buildings_ConstructSmall
@@ -600,15 +621,8 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - modulationRange: 0.1
-    name: UI_LoseRound
-    clip: {fileID: 8300000, guid: d2507c96c4d15af4c9891dc041d411c8, type: 3}
-    volume: 0
-    pitch: 0
-    loop: 1
-    source: {fileID: 0}
-  - modulationRange: 0.1
-    name: UI_WinRound
-    clip: {fileID: 8300000, guid: aeb4e9f31cfe61b40a8ea0ac2e42ffaa, type: 3}
+    name: Buildung_BreakingStructureGoblin
+    clip: {fileID: 8300000, guid: eea5511fcc3a9ca48b001ee734b0b0d4, type: 3}
     volume: 0
     pitch: 0
     loop: 1
