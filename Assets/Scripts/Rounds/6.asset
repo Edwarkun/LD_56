@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cfee3daaa2014da917940ee52c1e6, type: 3}
   m_Name: 6
   m_EditorClassIdentifier: 
+  maxLosses: 1
+  maxLossesForPerfect: 0
   rounds:
   - {fileID: 11400000, guid: bf3ba5ee738fc1b4e8887b89636d756f, type: 2}
   - {fileID: 11400000, guid: 8c04ecc6df6ae204bbbdf21d1e0972f8, type: 2}
