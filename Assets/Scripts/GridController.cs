@@ -80,7 +80,7 @@ public class GridController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameController.RoundStarted)
+        if (GameController.Instance.RoundStarted)
             return;
 
         if (resources == 0 || currentlySelectedTower == 0)
@@ -128,12 +128,21 @@ public class GridController : MonoBehaviour
         if (!Input.GetKeyDown(KeyCode.Mouse0))
             return;
 
+        Tuple<int, int> fixedPos = Tuple.Create(row, col);
+        if (placeables.ContainsKey(fixedPos))
+        {
+            Turret t = placeables[fixedPos];
+            if ((t.ID == 1 || t.ID == 4 || t.ID == 5) && currentlySelectedTower == 1 )
+                return;
+            if ((t.ID == 2 || t.ID == 6) && currentlySelectedTower == 2)
+                return;
+        }
+
         lever.SetActive(true);
 
         resources--;
         resourcesText.text = resources.ToString();
 
-        Tuple<int, int> fixedPos = Tuple.Create(row, col);
         if (placeables.ContainsKey(fixedPos))
         {
             //Check if the construction can be disassembled
@@ -153,7 +162,6 @@ public class GridController : MonoBehaviour
                     if(targetPos != fixedPos)
                         SpawnTower(tempComb.towerID[j], targetPos);
                 }
-                return;
             }
             Destroy(placeables[fixedPos].gameObject);
             currentTurrets.Remove(fixedPos);
@@ -211,17 +219,21 @@ public class GridController : MonoBehaviour
                     Destroy(placeables[targetFusionPos].gameObject);
                     currentTurrets.Remove(targetFusionPos);
                     SpawnTower(tower.combinations[i].towerToSpawnID, targetFusionPos);
-
-                    for (int k = 1; k < tower.combinations[i].layout.Length; k++)
-                    {
-                        Tuple<int, int> tempPos = Tuple.Create<int, int>(targetPos.Item1 + (int)tower.combinations[i].layout[k].x - (int)offset.x, targetPos.Item2 + (int)tower.combinations[i].layout[k].y - (int)offset.y);
-
-                        Destroy(placeables[tempPos].gameObject);
-                        currentTurrets.Remove(tempPos);
-                        placeables[tempPos] = placeables[targetFusionPos];
-                    }
                     return;
                 }
+            }
+        }
+        if(tower.originCombination != null)
+        {
+            for(int i = 1; i < tower.originCombination.layout.Length; i++)
+            {
+                int posX = targetPos.Item1 + (int)tower.originCombination.layout[i].x;
+                int posY = targetPos.Item2 + (int)tower.originCombination.layout[i].y;
+                Tuple<int, int> tempPos = Tuple.Create(posX, posY);
+                if(placeables.ContainsKey(tempPos))
+                    Destroy(placeables[tempPos].gameObject);
+                currentTurrets.Remove(tempPos);
+                placeables[tempPos] = tower;
             }
         }
     }

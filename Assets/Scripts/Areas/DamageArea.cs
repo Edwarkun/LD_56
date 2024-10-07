@@ -25,6 +25,9 @@ public class DamageArea : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.isTrigger)
+            return;
+
         HealthSystem controller = collision.gameObject.GetComponent<HealthSystem>();
         if (controller != null)
         {
@@ -35,6 +38,9 @@ public class DamageArea : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision.isTrigger)
+            return;
+
         HealthSystem controller = collision.gameObject.GetComponent<HealthSystem>();
         if (controller != null)
         {

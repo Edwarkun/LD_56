@@ -81,6 +81,7 @@ public class EnemyAttack : MonoBehaviour
             var hp = this.GetComponent<HealthSystem>();
             hp.TakeDamage(hp.health + 1);
             Instantiate(kamikazeArea, this.transform.position, Quaternion.identity, null);
+            AudioManager.Instance.StopSound("Enemies_ExplotenKitten");
         }
     }
 
