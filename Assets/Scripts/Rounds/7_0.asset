@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1799f709a6f2f04dbac5a1311d60308, type: 3}
-  m_Name: 6_2
+  m_Name: 7_0
   m_EditorClassIdentifier: 
   squadsToSpawn:
-  - {fileID: 7300136836233877763, guid: 2668293078da6324c810e4c4c6c839b7, type: 3}
+  - {fileID: 7300136836233877763, guid: 3d83a774292733c4b8fd70ab9ab44e97, type: 3}
   positions:
-  - {x: -5, y: -1}
+  - {x: -6, y: -2}
   resources: 10
-  dialog: "If that\u2019s their top brass, we\u2019re screwed. I don\u2019t even
-    wanna imagine what else is coming... and I\u2019ve seen some messed-up stuff."
+  dialog: "Comrade, this is it. This battle? It\u2019ll be remembered for generations,
+    as the day we crushed every last one of these fascist freaks into the dirt."
   canPlaceTower: 010101
   canCombine: 1
