@@ -5300,8 +5300,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6934e587f59bffc42a3fa44f314095e4, type: 2}
   - {fileID: 11400000, guid: ab99e1d71d63f6c4aa9e7ff7eaabe267, type: 2}
   - {fileID: 11400000, guid: 88178c0035baf23408bdeb0232ba89e1, type: 2}
-  - {fileID: 11400000, guid: 0068f84bc910a604d8b6c63223759f6b, type: 2}
-  - {fileID: 11400000, guid: a5134079438d35446bf16a66d98d3b7e, type: 2}
   roundIndicator: {fileID: 1115359253}
   roundResultPrefab: {fileID: 7308290771758364612, guid: 6c03c9d2bfebd824f805bd544e168ce7, type: 3}
   currentRound: 0

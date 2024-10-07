@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1799f709a6f2f04dbac5a1311d60308, type: 3}
-  m_Name: 6_2
+  m_Name: 7_4
   m_EditorClassIdentifier: 
   squadsToSpawn:
-  - {fileID: 7300136836233877763, guid: 2668293078da6324c810e4c4c6c839b7, type: 3}
+  - {fileID: 7300136836233877763, guid: a887d85237b092e4b86821fa502b1442, type: 3}
   positions:
-  - {x: -5, y: -1}
+  - {x: -8, y: -3}
   resources: 10
-  dialog: "If that\u2019s their top brass, we\u2019re screwed. I don\u2019t even
-    wanna imagine what else is coming... and I\u2019ve seen some messed-up stuff."
+  dialog: "So this is it, the grand finale, huh? Time to shred these fascist furballs
+    for good. We\u2019re gonna turn your nine lives into zero real fast!"
   canPlaceTower: 010101
   canCombine: 1
