@@ -17,6 +17,8 @@ MonoBehaviour:
   positions:
   - {x: -3, y: 4}
   resources: 2
-  dialog: 
+  dialog: "Take it easy, buddy... if this blows up, at least we\u2019ll go out in
+    style. Here\u2019s the latest in goblin magic, or as I like to call it: Pure
+    improvisation."
   canPlaceTower: 000001
   canCombine: 0

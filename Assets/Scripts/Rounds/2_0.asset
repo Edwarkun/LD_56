@@ -17,6 +17,7 @@ MonoBehaviour:
   positions:
   - {x: -3, y: 4}
   resources: 4
-  dialog: 
+  dialog: "If you manage to make something boom even bigger than before... congratulations,
+    you\u2019ve mastered goblin science. Macrostructures, baby!"
   canPlaceTower: 010101
   canCombine: 1

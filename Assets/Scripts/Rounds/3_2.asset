@@ -17,6 +17,7 @@ MonoBehaviour:
   positions:
   - {x: -3, y: 6}
   resources: 5
-  dialog: 
+  dialog: "Double squads? What\u2019s next, flying cats in power armor? Well... Hope
+    not "
   canPlaceTower: 010101
   canCombine: 1

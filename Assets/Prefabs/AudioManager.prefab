@@ -502,6 +502,13 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - modulationRange: 0.1
+    name: Enemies_ExplotenKitten
+    clip: {fileID: 8300000, guid: efa18d4304dee8a40af8ba2c11e1e0cc, type: 3}
+    volume: 0
+    pitch: 0
+    loop: 1
+    source: {fileID: 0}
+  - modulationRange: 0.1
     name: Torrets_BasicBow
     clip: {fileID: 8300000, guid: f8e81c540c685574f962a0ff4fc0fb0b, type: 3}
     volume: 0

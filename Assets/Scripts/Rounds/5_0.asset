@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1799f709a6f2f04dbac5a1311d60308, type: 3}
-  m_Name: 2_2
+  m_Name: 5_0
   m_EditorClassIdentifier: 
   squadsToSpawn:
-  - {fileID: 3373707350272586375, guid: f262a1bd51b59f74b9157b49d5462a2f, type: 3}
+  - {fileID: 7300136836233877763, guid: 6cabbc839a40ebc4ca01833818144cda, type: 3}
   positions:
-  - {x: -4, y: 7}
+  - {x: -3, y: 4}
   resources: 3
-  dialog: "Holy crap, look at that squad... but don\u2019t sweat it, they don\u2019t
-    stand a chance. We\u2019re goblins, baby!"
+  dialog: Aww, look at the adorable little furball with his hat... Hold up what is
+    in his mouth! DYNAMITE?! Are these psycho cats trying to blow us to bits now?!
   canPlaceTower: 010101
   canCombine: 1

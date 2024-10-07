@@ -17,6 +17,7 @@ MonoBehaviour:
   positions:
   - {x: -3, y: 4}
   resources: 3
-  dialog: 
+  dialog: "Come and get us, furballs! You\u2019re so slow, you\u2019ll barely make
+    it halfway before we\u2019re sipping victory beer."
   canPlaceTower: 010101
   canCombine: 1

@@ -17,6 +17,7 @@ MonoBehaviour:
   positions:
   - {x: -5, y: 5}
   resources: 1
-  dialog: Damn Catzis... Try placing an attack tower to fend them off!
+  dialog: "Time to break out the big guns! Let\u2019s see if these fascist furballs
+    enjoy a heavy dose of metal."
   canPlaceTower: 010000
   canCombine: 0
