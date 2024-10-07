@@ -17,6 +17,7 @@ MonoBehaviour:
   positions:
   - {x: -3, y: 7}
   resources: 5
-  dialog: 
+  dialog: "They\u2019re getting more organized... but lucky for us, chaos and anarchy
+    run this show!"
   canPlaceTower: 010101
   canCombine: 1

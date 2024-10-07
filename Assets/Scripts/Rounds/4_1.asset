@@ -17,6 +17,7 @@ MonoBehaviour:
   positions:
   - {x: -2, y: 4}
   resources: 5
-  dialog: 
+  dialog: "And those over there? Looks like they ate my grandma\u2026 and came back
+    for seconds."
   canPlaceTower: 010101
   canCombine: 1

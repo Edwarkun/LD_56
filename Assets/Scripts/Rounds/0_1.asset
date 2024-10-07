@@ -17,6 +17,7 @@ MonoBehaviour:
   positions:
   - {x: -5, y: 4}
   resources: 1
-  dialog: Be careful! They sent reinforcements!
+  dialog: "Think twice... or don't. Nothing\u2019s reversible here, just like that
+    dragon tattoo I got... can\u2019t see it, but I sure feel it."
   canPlaceTower: 010000
   canCombine: 0

@@ -17,6 +17,7 @@ MonoBehaviour:
   positions:
   - {x: -2, y: 4}
   resources: 5
-  dialog: 
+  dialog: "Oh, great, it\u2019s a tank-cat... this one\u2019s gonna take a while.
+    Slow as a sloth, but heavier than my hangover"
   canPlaceTower: 010101
   canCombine: 1

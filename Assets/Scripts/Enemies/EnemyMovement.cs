@@ -40,5 +40,9 @@ public class EnemyMovement : MonoBehaviour
     public void SetTarget(GameObject target)
     {
         this.target = target;
+        if (movementSpeed == 1.75)
+        {
+            AudioManager.Instance.PlaySounds("Enemies_ExplotenKitten");
+        }
     }
 }

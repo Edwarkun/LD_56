@@ -17,6 +17,7 @@ MonoBehaviour:
   positions:
   - {x: -5, y: 4}
   resources: 2
-  dialog: Try placing a couple of shields in front of the towers to acheive victory!
+  dialog: "More Katzis? And in packs? They probably have tea parties with Kitler
+    \u2014throw up those shields, or we\u2019re about to be their lunch."
   canPlaceTower: 000100
   canCombine: 0

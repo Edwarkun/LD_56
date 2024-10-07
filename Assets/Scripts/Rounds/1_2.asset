@@ -17,6 +17,7 @@ MonoBehaviour:
   positions:
   - {x: -3, y: 6}
   resources: 2
-  dialog: 
+  dialog: "Three turrets! Just like poker: if you lose, make sure you\u2019ve got
+    all your cards on the table... or in this case, a whole bunch of exploded cats."
   canPlaceTower: 010101
   canCombine: 1

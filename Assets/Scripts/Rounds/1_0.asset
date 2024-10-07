@@ -17,6 +17,7 @@ MonoBehaviour:
   positions:
   - {x: -3, y: 5}
   resources: 2
-  dialog: 
+  dialog: "Where do they keep coming from? Is there a Katzis Black Friday sale? Get
+    creative with the constructions, \u2018cause we\u2019re drowning in whiskers."
   canPlaceTower: 010100
   canCombine: 0

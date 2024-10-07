@@ -17,6 +17,7 @@ MonoBehaviour:
   positions:
   - {x: -4, y: 6}
   resources: 5
-  dialog: 
+  dialog: Now what the hell is that? A buffed-up, steroid-pumping cat? This is getting
+    weird.
   canPlaceTower: 010101
   canCombine: 1
