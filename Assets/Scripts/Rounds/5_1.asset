@@ -15,9 +15,9 @@ MonoBehaviour:
   squadsToSpawn:
   - {fileID: 7300136836233877763, guid: 89a16499b51db64488106fb59c9f5eee, type: 3}
   positions:
-  - {x: -2, y: 4}
+  - {x: -3, y: 4}
   resources: 5
-  dialog: "And those over there? Looks like they ate my grandma\u2026 and came back
-    for seconds."
+  dialog: "Kamikaze cats? Seriously? That\u2019s your big idea? What sick bastard
+    thought that up? Damn, I\u2019m pissed we didn\u2019t come up with it first!"
   canPlaceTower: 010101
   canCombine: 1

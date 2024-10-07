@@ -16,8 +16,8 @@ MonoBehaviour:
   - {fileID: 7300136836233877763, guid: cc53bf6cd82282640a04ccccb6efea8d, type: 3}
   positions:
   - {x: -3, y: 7}
-  resources: 5
-  dialog: "They\u2019re getting more organized... but lucky for us, chaos and anarchy
-    run this show!"
+  resources: 8
+  dialog: "Holy shit! That\u2019s a whole damn army of Katzis... Screw it, time to
+    blast them all to hell. No way we\u2019re getting overrun by some fascist felines!"
   canPlaceTower: 010101
   canCombine: 1

@@ -16,8 +16,8 @@ MonoBehaviour:
   - {fileID: 7300136836233877763, guid: 6cabbc839a40ebc4ca01833818144cda, type: 3}
   positions:
   - {x: -3, y: 4}
-  resources: 5
-  dialog: "Come and get us, furballs! You\u2019re so slow, you\u2019ll barely make
-    it halfway before we\u2019re sipping victory beer."
+  resources: 3
+  dialog: Aww, look at the adorable little furball with his hat... Hold up what is
+    in his mouth! DYNAMITE?! Are these psycho cats trying to blow us to bits now?!
   canPlaceTower: 010101
   canCombine: 1
