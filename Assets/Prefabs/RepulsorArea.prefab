@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5462570400402331381}
   - component: {fileID: 4835758235539133210}
   - component: {fileID: 8750201195322913172}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: RepulsorArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6965754402213953283}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cde3952549d2af40b9f3790c0cb12d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 5230e0a9f2f95764788802e74e8fe172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 5777437031115842284}
@@ -111,27 +111,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1004344080208298, guid: abd02a3656db51f469581331b963f4f7, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1453135190541372, guid: abd02a3656db51f469581331b963f4f7, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1479466377769912, guid: abd02a3656db51f469581331b963f4f7, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1542529580584784, guid: abd02a3656db51f469581331b963f4f7, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1774514140270930, guid: abd02a3656db51f469581331b963f4f7, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1864264415365310, guid: abd02a3656db51f469581331b963f4f7, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1864264415365310, guid: abd02a3656db51f469581331b963f4f7, type: 3}
       propertyPath: m_IsActive
@@ -143,7 +143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1865185532811072, guid: abd02a3656db51f469581331b963f4f7, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4479951374907842, guid: abd02a3656db51f469581331b963f4f7, type: 3}
       propertyPath: m_LocalScale.x

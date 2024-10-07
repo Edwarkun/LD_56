@@ -30,6 +30,11 @@ public class TurretAttack : MonoBehaviour
     public Projectile projectile;
     public Transform projectileSpawnPoint;
 
+    public void Start()
+    {
+        currentAttackTime = attackTime;
+    }
+
     public void Attack()
     {
         currentAttackTime = 0.0f;
@@ -40,13 +45,13 @@ public class TurretAttack : MonoBehaviour
 
     private void Update()
     {
-        if (!GameController.RoundStarted)
+        if (!GameController.Instance.RoundStarted)
             return;
 
         if (isAttacking)
         {
             currentAttackTime += Time.deltaTime;
-            if (currentAttackTime > attackTime)
+            if (currentAttackTime >= attackTime)
             {
                 isAttacking = false;
             }

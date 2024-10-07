@@ -17,6 +17,7 @@ public class Repulser : MonoBehaviour
         {
             target.GetComponent<Rigidbody2D>().AddForce((target.transform.position - transform.position) * forceScale, ForceMode2D.Impulse);
         }
+        Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

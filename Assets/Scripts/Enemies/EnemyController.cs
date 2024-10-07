@@ -16,7 +16,8 @@ public class EnemyController : MonoBehaviour
     }
     public void OnDestroy()
     {
-        GameController.Instance.enemies.Remove(this);
+        if(GameController.Instance != null)
+            GameController.Instance.enemies.Remove(this);
     }
 
     public void BeginRound() 
@@ -28,7 +29,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameController.RoundStarted)
+        if (!GameController.Instance.RoundStarted)
             return;
 
         //Check for tower

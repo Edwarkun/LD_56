@@ -8,7 +8,6 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    public int maxLosses = 2;
     private bool[] victories;
     [SerializeField]
     private LevelRounds[] levelRounds;
@@ -18,7 +17,7 @@ public class GameController : MonoBehaviour
 
     public int currentRound = 0;
 
-    public static bool RoundStarted = false;
+    public bool RoundStarted = false;
 
     public static GameController Instance = null;
 
@@ -129,7 +128,7 @@ public class GameController : MonoBehaviour
         for (int i = 0; i < currentRound; i++)
             losses += victories[i] ? 0 : 1;
 
-        if (losses > maxLosses)
+        if (losses > levelRounds[LevelSelector.selectedLevel].maxLosses)
         {
             //Trigger loss animation
             SceneManager.LoadScene(1);
@@ -137,7 +136,7 @@ public class GameController : MonoBehaviour
         else if (currentRound == levelRounds[LevelSelector.selectedLevel].rounds.Length)
         {
             //Trigger finish animation
-            LevelSelector.CompleteLevel(0, losses == 0);
+            LevelSelector.CompleteLevel(0, losses <= levelRounds[LevelSelector.selectedLevel].maxLossesForPerfect);
             SceneManager.LoadScene(1);
         }
         else
