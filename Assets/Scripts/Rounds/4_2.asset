@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 4_2
   m_EditorClassIdentifier: 
   squadsToSpawn:
-  - {fileID: 8774957121955782684, guid: f409f7a5f341e12409ff4b27f928bc28, type: 3}
+  - {fileID: 7300136836233877763, guid: 453c06d8e61dd4540b1c8c912a8e34c8, type: 3}
   positions:
-  - {x: -2, y: 4}
+  - {x: -3, y: 7}
   resources: 5
   dialog: 
   canPlaceTower: 010101
