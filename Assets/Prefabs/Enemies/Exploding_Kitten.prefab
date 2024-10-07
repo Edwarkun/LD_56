@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8dd815b7af6de49b788aa51a5b849f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attack: 12
+  attack: 0
   range: 0.75
   squaredRange: 1
   currentAttackTime: 0

@@ -13,19 +13,9 @@ MonoBehaviour:
   m_Name: 0_1
   m_EditorClassIdentifier: 
   squadsToSpawn:
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
+  - {fileID: 1061880121698337745, guid: d5f678e8c41e5284cb4d04bf6dfabd74, type: 3}
   positions:
   - {x: -5, y: 4}
-  - {x: -5, y: 5}
-  - {x: -5, y: 6}
-  - {x: -7, y: 4}
-  - {x: -7, y: 5}
-  - {x: -7, y: 6}
   resources: 1
   dialog: Be careful! They sent reinforcements!
   canPlaceTower: 010000

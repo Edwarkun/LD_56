@@ -13,32 +13,10 @@ MonoBehaviour:
   m_Name: 1_2
   m_EditorClassIdentifier: 
   squadsToSpawn:
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
-  - {fileID: 1904114237208702599, guid: 02bde07b894a48943be1b82c1deaf672, type: 3}
+  - {fileID: 486917221693004946, guid: 5c95165b3eb35a343ae7975fa45187c2, type: 3}
   positions:
-  - {x: -1, y: 2}
-  - {x: -1, y: 3}
-  - {x: -1, y: 4}
-  - {x: -1, y: 6}
-  - {x: -1, y: 7}
-  - {x: -1, y: 8}
-  - {x: -2, y: 2}
-  - {x: -2, y: 3}
-  - {x: -2, y: 4}
-  - {x: -2, y: 6}
-  - {x: -2, y: 7}
-  - {x: -2, y: 8}
-  resources: 1
+  - {x: -1, y: 5}
+  resources: 2
   dialog: 
   canPlaceTower: 010001
   canCombine: 0
