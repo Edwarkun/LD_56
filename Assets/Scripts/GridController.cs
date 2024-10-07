@@ -1,15 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using Unity.VisualScripting;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.Device;
-using static UnityEditor.PlayerSettings;
-using System.Resources;
 
 public class GridController : MonoBehaviour
 {
@@ -135,6 +129,8 @@ public class GridController : MonoBehaviour
             if ((t.ID == 1 || t.ID == 4 || t.ID == 5) && currentlySelectedTower == 1 )
                 return;
             if ((t.ID == 2 || t.ID == 6) && currentlySelectedTower == 2)
+                return;
+            if (t.ID == 3 && currentlySelectedTower == 3)
                 return;
         }
 

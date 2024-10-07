@@ -136,7 +136,7 @@ public class GameController : MonoBehaviour
         else if (currentRound == levelRounds[LevelSelector.selectedLevel].rounds.Length)
         {
             //Trigger finish animation
-            LevelSelector.CompleteLevel(0, losses <= levelRounds[LevelSelector.selectedLevel].maxLossesForPerfect);
+            LevelSelector.CompleteLevel(LevelSelector.selectedLevel, losses <= levelRounds[LevelSelector.selectedLevel].maxLossesForPerfect);
             SceneManager.LoadScene(1);
         }
         else

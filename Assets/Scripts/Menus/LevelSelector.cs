@@ -67,8 +67,9 @@ public class LevelSelector : MonoBehaviour
     {
         int maxUnlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
         int currentCompletedLevels = PlayerPrefs.GetInt("CompletedLevels", 1);
-        PlayerPrefs.SetInt("UnlockedLevel", Mathf.Max(maxUnlockedLevel, index));
-        PlayerPrefs.SetInt("CompletedLevels", currentCompletedLevels & (1 << index));
+        PlayerPrefs.SetInt("UnlockedLevel", Mathf.Max(maxUnlockedLevel, index + 1));
+        if(completed)
+            PlayerPrefs.SetInt("CompletedLevels", currentCompletedLevels | (1 << index));
         PlayerPrefs.Save();
     }
 

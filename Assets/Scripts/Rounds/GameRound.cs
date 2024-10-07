@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEditor;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 [CreateAssetMenu(fileName = "GameRound", menuName = "ScriptableObjects/GameRound", order = 1)]
 public class GameRound : ScriptableObject

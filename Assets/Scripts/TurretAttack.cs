@@ -111,7 +111,11 @@ public class TurretAttack : MonoBehaviour
     public void SpawnProjectile()
     {
         if (currentTarget == null)
+        {
+            if(projectile.areaEffect != null)
+                Instantiate(projectile.areaEffect, this.transform.position, Quaternion.identity, null);
             return;
+        }
 
         Projectile p = Instantiate(projectile, null);
 
