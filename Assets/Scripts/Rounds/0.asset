@@ -16,5 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 988b52f1c721ade48b542f45c9d4590d, type: 2}
   - {fileID: 11400000, guid: 36c25634aa8f40747803ae0e3e7b2c94, type: 2}
   - {fileID: 11400000, guid: 75aa98ba85d63034b916e23897f6ba90, type: 2}
-  mapSizeX: 9
-  mapSizeY: 9
+  mapSizeX: 11
+  mapSizeY: 11

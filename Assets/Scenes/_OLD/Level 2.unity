@@ -3869,6 +3869,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99b445a4c58f7954380e0c04c38654df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentlySelectedTower: 0
+  resources: 0
+  towerButtons: []
+  towerButtonsHighlights: []
+  resourcesText: {fileID: 0}
+  gridSprite: {fileID: 0}
   cam: {fileID: 519420031}
   baseTowerPrefabs:
   - {fileID: 4824686368126199083, guid: 37aad783d5713a442b8c57e4e684fda8, type: 3}
@@ -3876,6 +3882,7 @@ MonoBehaviour:
   - {fileID: 394131299658822593, guid: a70d2ce60c82aed4cbc79e98cbd236b1, type: 3}
   - {fileID: 6800003678537611685, guid: 17c51d6bdbeb4304ca0e8945e7bb720c, type: 3}
   lastSelectedTile: {fileID: 0}
+  lever: {fileID: 0}
 --- !u!483693784 &1143866506
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -4653,6 +4660,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e8bf9f2b6bf2dd4a94124097234f56f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLosses: 2
+  levelRounds: []
+  roundIndicator: {fileID: 0}
+  roundResultPrefab: {fileID: 0}
+  currentRound: 0
+  LeverAnimatior: {fileID: 0}
+  roundAnim: {fileID: 0}
+  dialog: {fileID: 0}
+  dialogText: {fileID: 0}
+  canCombine: 1
+  towerButtons: []
 --- !u!4 &1466757729
 Transform:
   m_ObjectHideFlags: 0

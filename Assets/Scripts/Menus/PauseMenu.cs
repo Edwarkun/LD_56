@@ -19,6 +19,7 @@ public class PauseMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             TogglePauseMenu();
+            AudioManager.Instance.PlaySounds("UI_PressButton");
         }
     }
 
@@ -46,5 +47,6 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         SceneManager.LoadScene(0);
+        AudioManager.Instance.PlaySounds("UI_PressButton");
     }
 }

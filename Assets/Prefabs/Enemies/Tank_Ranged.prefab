@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249a474f3fe7b0f4db740e2db29b3060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
+  movementSpeed: 10
   rb: {fileID: 6151808457099106459}
   canMove: 1
   anim: {fileID: 3426795704054261483}
@@ -151,6 +151,8 @@ MonoBehaviour:
   target: {fileID: 0}
   projectile: {fileID: 819676730447215029, guid: bc2ba8a66e2238f40aca63575eee4ba1, type: 3}
   projectileSpawnPoint: {fileID: 8332424802440923506}
+  kamikaze: 0
+  kamikazeArea: {fileID: 0}
 --- !u!114 &2212394579256871572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,8 +183,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 2
+  m_Mass: 5
+  m_LinearDrag: 4
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
