@@ -37,9 +37,7 @@ public class TurretAttack : MonoBehaviour
 
     public void Attack()
     {
-        currentAttackTime = 0.0f;
         isAttacking = true;
-
         anim.SetTrigger("Attack");
     }
 
@@ -54,6 +52,7 @@ public class TurretAttack : MonoBehaviour
             if (currentAttackTime >= attackTime)
             {
                 isAttacking = false;
+                currentAttackTime = 0.0f;
             }
         }
         else
