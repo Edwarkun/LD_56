@@ -39,7 +39,7 @@ public class LevelSelector : MonoBehaviour
     {
         selectedLevel = levelId;
         SceneManager.LoadScene(2);
-        AudioManager.Instance.PlaySounds("PressButton");
+        AudioManager.Instance.PlaySounds("UI_PressButton");
 
         if (!AudioManager.Instance.isPlayingLevelsMusic)
         {
@@ -49,7 +49,7 @@ public class LevelSelector : MonoBehaviour
 
     public void ReturnMainMenu()
     {
-        AudioManager.Instance.PlaySounds("PressButton");
+        AudioManager.Instance.PlaySounds("UI_PressButton");
         SceneManager.LoadScene("MainMenu");
     }
 

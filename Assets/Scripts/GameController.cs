@@ -38,7 +38,7 @@ public class GameController : MonoBehaviour
     {
         Instance = this;
         victories = new bool[levelRounds[LevelSelector.selectedLevel].rounds.Length];
-        for(int i = 0; i < levelRounds[LevelSelector.selectedLevel].rounds.Length; i++)
+        for (int i = 0; i < levelRounds[LevelSelector.selectedLevel].rounds.Length; i++)
         {
             Instantiate(roundResultPrefab, roundIndicator);
         }
@@ -47,7 +47,7 @@ public class GameController : MonoBehaviour
 
     private void OnDestroy()
     {
-        if(Instance == this)
+        if (Instance == this)
             Instance = null;
     }
 
@@ -55,7 +55,7 @@ public class GameController : MonoBehaviour
     {
         if (RoundStarted)
         {
-            if(enemies.Count == 0 || GridController.Instance.placeables.Count == 0)
+            if (enemies.Count == 0 || GridController.Instance.placeables.Count == 0)
             {
                 RoundStarted = false;
                 FinishRound();
@@ -78,7 +78,7 @@ public class GameController : MonoBehaviour
         dialog.SetActive(levelRounds[LevelSelector.selectedLevel].rounds[currentRound].dialog.Length > 0);
         dialogText.text = levelRounds[LevelSelector.selectedLevel].rounds[currentRound].dialog;
 
-        for(int i = 0; i < towerButtons.Length; i++)
+        for (int i = 0; i < towerButtons.Length; i++)
         {
             towerButtons[i].SetActive(levelRounds[LevelSelector.selectedLevel].rounds[currentRound].canPlaceTower[i]);
         }
@@ -102,7 +102,7 @@ public class GameController : MonoBehaviour
             victories[currentRound] = true;
         }
         roundIndicator.GetChild(currentRound).GetChild(won ? 0 : 1).gameObject.SetActive(true);
-        
+
         currentRound++;
         roundAnim.SetTrigger(won ? "RoundWon" : "RoundLost");
         StartCoroutine(WaitAndReset());

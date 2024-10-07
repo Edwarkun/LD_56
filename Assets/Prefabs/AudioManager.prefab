@@ -599,6 +599,20 @@ MonoBehaviour:
     pitch: 0
     loop: 1
     source: {fileID: 0}
+  - modulationRange: 0.1
+    name: UI_LoseRound
+    clip: {fileID: 8300000, guid: d2507c96c4d15af4c9891dc041d411c8, type: 3}
+    volume: 0
+    pitch: 0
+    loop: 1
+    source: {fileID: 0}
+  - modulationRange: 0.1
+    name: UI_WinRound
+    clip: {fileID: 8300000, guid: aeb4e9f31cfe61b40a8ea0ac2e42ffaa, type: 3}
+    volume: 0
+    pitch: 0
+    loop: 1
+    source: {fileID: 0}
   isPlayingMainMenuMusic: 0
   isPlayingLevelsMusic: 0
   musicSource: {fileID: 3830871774883573800}

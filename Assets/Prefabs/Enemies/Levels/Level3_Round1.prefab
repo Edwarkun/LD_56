@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 7321484934335131626}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.030241, y: -3.1259637, z: -0.021244848}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -87,7 +87,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4024433581465963715, guid: 54264c33e7c45d34a9e8d68aadbf0bdc, type: 3}
+    - {fileID: 5819289417631509093, guid: 54264c33e7c45d34a9e8d68aadbf0bdc, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54264c33e7c45d34a9e8d68aadbf0bdc, type: 3}
@@ -211,7 +213,9 @@ PrefabInstance:
       value: Basic_Melee_4Squad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2045957591071118581, guid: c4b6a40f8f8444e41ac7a85a86a72850, type: 3}
+    - {fileID: 6705886054763841885, guid: c4b6a40f8f8444e41ac7a85a86a72850, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4b6a40f8f8444e41ac7a85a86a72850, type: 3}

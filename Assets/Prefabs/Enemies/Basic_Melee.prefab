@@ -151,6 +151,8 @@ MonoBehaviour:
   target: {fileID: 0}
   projectile: {fileID: 0}
   projectileSpawnPoint: {fileID: 0}
+  kamikaze: 0
+  kamikazeArea: {fileID: 0}
 --- !u!114 &2409373563152618827
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1799f709a6f2f04dbac5a1311d60308, type: 3}
+  m_Name: 3_0
+  m_EditorClassIdentifier: 
+  squadsToSpawn:
+  - {fileID: 7321484934335131626, guid: 313ba374fb887264e904014ec90a90c4, type: 3}
+  positions:
+  - {x: -4, y: 6}
+  resources: 5
+  dialog: 
+  canPlaceTower: 010101
+  canCombine: 1

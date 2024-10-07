@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     public void PlayGame()
     {
-        AudioManager.Instance.PlaySounds("PressButton");
+        AudioManager.Instance.PlaySounds("UI_PressButton");
         SceneManager.LoadScene("LevelSelector");
     }
 

@@ -18,5 +18,5 @@ MonoBehaviour:
   - {x: -5, y: 5}
   resources: 1
   dialog: Damn Catzis... Try placing an attack tower to fend them off!
-  canPlaceTower: 01
+  canPlaceTower: 010000
   canCombine: 0
