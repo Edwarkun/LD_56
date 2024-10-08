@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 7300136836233877763, guid: 55614a2987d59f742bbe824911941eb5, type: 3}
   positions:
   - {x: -6, y: -2}
-  resources: 10
+  resources: 12
   dialog: "Oh, now they\u2019re sending in the fat ones. Let\u2019s blow these bloated
     bastards to pieces. Make 'em wish they stayed in their litter box."
   canPlaceTower: 010101

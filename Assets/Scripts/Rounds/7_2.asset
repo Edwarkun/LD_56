@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 7300136836233877763, guid: 277455418cdcf02479e60f958c5c2364, type: 3}
   positions:
   - {x: -6, y: -2}
-  resources: 10
+  resources: 12
   dialog: "The whole damn Katzi army? Perfect. We're about to turn this battlefield
     into a graveyard full of fur and failure. No one\u2019s walking away from this."
   canPlaceTower: 010101

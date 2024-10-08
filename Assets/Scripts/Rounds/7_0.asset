@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 7300136836233877763, guid: 3d83a774292733c4b8fd70ab9ab44e97, type: 3}
   positions:
   - {x: -6, y: -2}
-  resources: 10
+  resources: 12
   dialog: "Comrade, this is it. This battle? It\u2019ll be remembered for generations,
     as the day we crushed every last one of these fascist freaks into the dirt."
   canPlaceTower: 010101

@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249a474f3fe7b0f4db740e2db29b3060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1.5
+  movementSpeed: 1.25
   rb: {fileID: 3430855088552082834}
   canMove: 1
   anim: {fileID: 5896038512229227807}

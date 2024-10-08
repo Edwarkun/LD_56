@@ -15,7 +15,7 @@ MonoBehaviour:
   squadsToSpawn:
   - {fileID: 7300136836233877763, guid: cc53bf6cd82282640a04ccccb6efea8d, type: 3}
   positions:
-  - {x: -3, y: 7}
+  - {x: -5, y: 1}
   resources: 8
   dialog: "Holy shit! That\u2019s a whole damn army of Katzis... Screw it, time to
     blast them all to hell. No way we\u2019re getting overrun by some fascist felines!"

@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 7300136836233877763, guid: a887d85237b092e4b86821fa502b1442, type: 3}
   positions:
   - {x: -8, y: -3}
-  resources: 10
+  resources: 15
   dialog: "So this is it, the grand finale, huh? Time to shred these fascist furballs
     for good. We\u2019re gonna turn your nine lives into zero real fast!"
   canPlaceTower: 010101

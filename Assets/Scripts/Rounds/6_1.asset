@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 7300136836233877763, guid: 381c678a971faec47ab29726e135e136, type: 3}
   positions:
   - {x: -3, y: 1}
-  resources: 8
+  resources: 10
   dialog: "What the actual fuck was that? That\u2019s disgusting! See? This is why
     you should never trust cats. They\u2019re walking horror shows."
   canPlaceTower: 010101

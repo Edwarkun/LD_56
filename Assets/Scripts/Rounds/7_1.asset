@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 7300136836233877763, guid: 15afbacf2e739b14aaea3faec7fc689b, type: 3}
   positions:
   - {x: -7, y: -3}
-  resources: 10
+  resources: 12
   dialog: "That\u2019s it? We\u2019ve killed cockroaches tougher than this! Come
     on, you mangy fascist hairballs, at least try to put up a fight!"
   canPlaceTower: 010101
